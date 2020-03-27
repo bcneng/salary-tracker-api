@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class SalaryTrackerBeApplication
 
 fun main(args: Array<String>) {
-	runApplication<SalaryTrackerBeApplication>(*args)
+    runApplication<SalaryTrackerBeApplication>(*args)
 }

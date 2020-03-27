@@ -1,13 +1,12 @@
 package net.bcneng.salarytrackerbe
 
-import org.junit.jupiter.api.Test
+import io.kotest.core.spec.style.AnnotationSpec
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class SalaryTrackerBeApplicationTests {
+class SalaryTrackerBeApplicationTests : AnnotationSpec() {
 
-	@Test
-	fun contextLoads() {
-	}
-
+    @Test
+    fun contextLoads() {
+    }
 }
