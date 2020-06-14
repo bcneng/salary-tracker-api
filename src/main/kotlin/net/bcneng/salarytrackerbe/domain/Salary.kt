@@ -3,12 +3,9 @@ package net.bcneng.salarytrackerbe.domain
 import net.bcneng.salarytrackerbe.domain.graphql.CompanySize
 import net.bcneng.salarytrackerbe.domain.graphql.EmploymentType
 import net.bcneng.salarytrackerbe.domain.graphql.Gender
-import org.hibernate.annotations.Fetch
 import org.hibernate.annotations.Type
 import java.util.UUID
 import javax.persistence.CascadeType
-import javax.persistence.CollectionTable
-import javax.persistence.ElementCollection
 import javax.persistence.Entity
 import javax.persistence.FetchType
 import javax.persistence.GeneratedValue
@@ -22,7 +19,7 @@ import javax.persistence.ManyToMany
 data class Salary(
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Type(type="uuid-char")
+    @Type(type = "uuid-char")
     val id: UUID? = null,
     val yearsInPosition: Int,
     val yearsInTotal: Int,
