@@ -38,13 +38,11 @@ repositories {
 }
 
 dependencies {
+    implementation("com.expediagroup:graphql-kotlin-spring-server:3.1.1")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("io.springfox:springfox-swagger2:2.9.2")
-    implementation("io.springfox:springfox-swagger-ui:2.9.2")
     implementation("com.h2database:h2:1.4.199")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
@@ -54,6 +52,7 @@ dependencies {
     testImplementation("io.kotest:kotest-runner-junit5-jvm:4.0.1")
     testImplementation("io.kotest:kotest-assertions-core-jvm:4.0.1")
     testImplementation("io.kotest:kotest-extensions-spring:4.0.1")
+    testImplementation("io.projectreactor:reactor-test")
 }
 
 tasks.withType<Test> {
