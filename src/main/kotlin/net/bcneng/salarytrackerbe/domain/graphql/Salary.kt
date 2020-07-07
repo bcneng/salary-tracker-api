@@ -23,6 +23,23 @@ data class SalaryEntryInput(
     val perks: List<String>
 )
 
+data class SalaryEntry(
+    val id: String,
+    val yearsInPosition: Int,
+    val yearsInTotal: Int,
+    val position: String,
+    val role: String,
+    val employmentType: EmploymentType,
+    val companySize: CompanySize,
+    val grossAnnualSalary: Int,
+    val location: String,
+    val gender: Gender,
+    val remote: Boolean,
+    val hoursPerWeek: Double,
+    val technologies: List<String>,
+    val perks: List<String>
+)
+
 enum class EmploymentType(val value: Int) {
     CONTRACTOR(0),
     FREELANCE(1),
