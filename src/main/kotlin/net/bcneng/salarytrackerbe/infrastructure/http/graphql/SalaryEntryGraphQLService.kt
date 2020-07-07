@@ -22,4 +22,5 @@ class SalaryEntryQuery(val salaryEntryRepository: SalaryEntryRepository) : Query
 @Component
 class SalaryEntryMutation(val salaryEntryRepository: SalaryEntryRepository) : Mutation {
     fun addSalaryEntry(input: SalaryEntryInput): SalaryEntryResult = salaryEntryRepository.save(input.toDB()).toResult()
+
 }
